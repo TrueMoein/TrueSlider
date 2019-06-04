@@ -1,0 +1,24 @@
+{
+  "name": "trueslider",
+  "version": "0.0.1",
+  "description": "another image slider",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TrueMoein/TrueSlider.git"
+  },
+  "keywords": [
+    "image-slider",
+    "slider",
+    "free-image-slider"
+  ],
+  "author": "@TrueMoein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TrueMoein/TrueSlider/issues"
+  },
+  "homepage": "https://TrueSlider.ir/"
+}
