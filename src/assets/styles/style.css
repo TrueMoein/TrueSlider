@@ -1,0 +1,12 @@
+.true--__--slider {
+  background: red;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.true--__--slider__image {
+  object-fit: cover;
+  position: absolute;
+  transition: .5s;
+}
