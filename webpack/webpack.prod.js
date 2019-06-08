@@ -9,7 +9,7 @@ module.exports = merge(common, {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: '/css/trueslider.css',
+      filename: 'css/trueslider.css',
     }),
   ],
   module: {

@@ -21,7 +21,7 @@ type optionsType = {
 }
 
 function trueSlider(options: optionsType = defaultOptions) {
-  window.True$lider = options;
+  window.True$lider = { ...defaultOptions, ...options };
   sliderMaker();
 }
 

@@ -1,12 +1,15 @@
 // @flow
 
 type exceptions =
+  | 'queryClassOrId'
   | 'elementNotFound'
   | 'optionsNotProvided'
 
 export default function exception(type: exceptions) {
+  const { el } = window.True$lider;
   switch (type) {
-    case 'elementNotFound': return Error(`Element with id ${window.True$lider.el} not found!`);
+    case 'queryClassOrId': return Error(`"${el}" is not a valid selector for element, Please pass an id or class name to el property. example: ".true-slider" or "#slider"`);
+    case 'elementNotFound': return Error(`Element with ${el.startsWith('.') ? 'class' : 'id'} "${el.slice(1)}" not found!`);
     case 'optionsNotProvided': return Error('The required options not provided');
     default: return Error('Error');
   }
