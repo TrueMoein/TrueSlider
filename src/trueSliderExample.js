@@ -1,1 +1,1 @@
-console.log('this is inside example!!!');
+window.TrueSlider({ el: '#slider' });
