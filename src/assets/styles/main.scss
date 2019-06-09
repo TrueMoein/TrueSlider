@@ -1,13 +1,10 @@
-.true--__--slider {
+.TrueSlider {
   background: red;
   display: flex;
   position: relative;
   overflow: hidden;
-}
 
-.true--__--slider__image {
-  object-fit: cover;
-  position: absolute;
-  width: 100%;
-  transition: .5s;
+  .ts_nav-btn {
+    
+  }
 }
