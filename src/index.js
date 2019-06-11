@@ -5,6 +5,7 @@
 
 import sliderMaker from './modules/sliderMaker';
 import './assets/styles/main.scss';
+import { ready } from './modules/events';
 
 const defaultOptions = {
   el: '#true-slider',
@@ -22,6 +23,8 @@ type optionsType = {
 
 function trueSlider(options: optionsType = defaultOptions) {
   window.True$lider = { ...defaultOptions, ...options };
+  document.dispatchEvent(ready(options));
+
   sliderMaker();
 }
 
