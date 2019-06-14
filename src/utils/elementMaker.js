@@ -1,10 +1,8 @@
-// @flow
+export default function elementMaker(type, attributes) {
+  const element = document.createElement(type);
 
-export default function elementMaker(type: string, attributes: {}): HTMLElement {
-  const element = document.createElement(type, attributes);
-
-  Object.entries(attributes).forEach((a) => {
-    element.setAttribute(a[0], a[1]);
+  Object.entries(attributes).forEach((attribute) => {
+    element.setAttribute(attribute[0], attribute[1]);
   });
 
   return element;

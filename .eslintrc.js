@@ -4,10 +4,7 @@ module.exports = {
     commonjs: true,
     es6: true,
   },
-  extends: ['airbnb-base', "plugin:flowtype/recommended"],
-  "plugins": [
-    "flowtype"
-  ],
+  extends: ['airbnb-base'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',

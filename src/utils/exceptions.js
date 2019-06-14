@@ -1,11 +1,4 @@
-// @flow
-
-type exceptions =
-  | 'queryClassOrId'
-  | 'elementNotFound'
-  | 'optionsNotProvided'
-
-export default function exception(type: exceptions) {
+export default function exception(type) {
   const { el } = window.True$lider;
   switch (type) {
     case 'queryClassOrId': return Error(`"${el}" is not a valid selector for element, Please pass an id or class name to el property. example: ".true-slider" or "#slider"`);

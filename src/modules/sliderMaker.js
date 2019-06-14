@@ -1,9 +1,7 @@
-// @flow
-
 import exception from '../utils/exceptions';
-import prevNextButtons from './navigation';
+import navigation from './navigation';
 
-function makeSlider(element: HTMLAnchorElement) {
+function makeSlider(element) {
   const { width, height } = window.True$lider;
   element.style.width = `${width}px`;
   element.style.height = `${height}px`;
@@ -20,5 +18,5 @@ export default function sliderMaker() {
   if (!sliderElement) throw exception('elementNotFound');
 
   makeSlider(sliderElement);
-  prevNextButtons(sliderElement);
+  navigation(sliderElement);
 }
