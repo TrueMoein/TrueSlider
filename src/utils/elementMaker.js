@@ -1,9 +1,13 @@
-export default function elementMaker(type, attributes) {
+export default function elementMaker(type, body, attributes) {
   const element = document.createElement(type);
 
-  Object.entries(attributes).forEach((attribute) => {
-    element.setAttribute(attribute[0], attribute[1]);
-  });
+  if (body) element.innerHTML = body;
+
+  if (attributes) {
+    Object.entries(attributes).forEach(attribute => {
+      element.setAttribute(attribute[0], attribute[1]);
+    });
+  }
 
   return element;
 }

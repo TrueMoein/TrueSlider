@@ -1,11 +1,11 @@
-import elementMaker from '../utils/elementMaker';
+import elementMaker from "../utils/elementMaker";
 
 export default function navigation(el) {
-  const slideRight = elementMaker('div', {
-    class: 'tsNavigation slide-right',
+  const slideRight = elementMaker("div", "salsan", {
+    class: "tsNavigation slide-right"
   });
-  const slideLeft = elementMaker('div', {
-    class: 'tsNavigation slide-left',
+  const slideLeft = elementMaker("div", "salsan", {
+    class: "tsNavigation slide-left"
   });
 
   el.appendChild(slideRight);
