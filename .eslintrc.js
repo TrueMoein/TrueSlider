@@ -14,9 +14,15 @@ module.exports = {
     ecmaVersion: 2018,
   },
   rules: {
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
+    ],
     "no-param-reassign": ["error", { "props": false }],
     "no-restricted-syntax": 0,
-    "import/no-extraneous-dependencies": 0
+    "import/no-extraneous-dependencies": 0,
+    "linebreak-style": 0
   },
 };

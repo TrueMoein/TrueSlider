@@ -1,3 +1,1 @@
-export default function slides(el) {
-
-}
+export default function slides(el) {}

@@ -1,19 +1,19 @@
 export default function exception(type) {
   const { el } = window.True$lider;
   switch (type) {
-    case "queryClassOrId":
+    case 'queryClassOrId':
       return Error(
         `"${el}" is not a valid selector for element, Please pass an id or class name to el property. example: ".true-slider" or "#slider"`
       );
-    case "elementNotFound":
+    case 'elementNotFound':
       return Error(
-        `Element with ${el.startsWith(".") ? "class" : "id"} "${el.slice(
+        `Element with ${el.startsWith('.') ? 'class' : 'id'} "${el.slice(
           1
         )}" not found!`
       );
-    case "optionsNotProvided":
-      return Error("The required options not provided");
+    case 'optionsNotProvided':
+      return Error('The required options not provided');
     default:
-      return Error("Error");
+      return Error('Error');
   }
 }

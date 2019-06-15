@@ -1,9 +1,9 @@
-import sliderMaker from "./modules/sliderMaker";
-import "./assets/styles/main.scss";
-import { ready } from "./modules/events";
+import sliderMaker from './modules/sliderMaker';
+import './assets/styles/main.scss';
+import { ready } from './modules/events';
 
 const defaultOptions = {
-  el: "#true-slider",
+  el: '#true-slider',
   width: 500,
   height: 400,
   speed: 2000
