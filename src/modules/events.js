@@ -1,11 +1,11 @@
-export function ready(detail) {
-  return new CustomEvent('TrueSlider->ready', {
-    detail
-  });
+export function ready() {
+  return new Event('TrueSlider:ready');
 }
 
-export function loaded(detail) {
-  return new CustomEvent('TrueSlider->loaded', {
-    detail
-  });
+export function navigationsCreated() {
+  return new Event('TrueSlider:navigationsCreated');
+}
+
+export function allSlidesLoaded() {
+  return new Event('TrueSlider:allSlidesLoaded');
 }

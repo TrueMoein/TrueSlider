@@ -1,6 +1,6 @@
-import exception from '../utils/exceptions';
 import navigation from './navigation';
 import slides from './slides';
+import sliderElement from '../utils/sliderElement';
 
 function makeSlider(element) {
   const { width, height } = window.True$lider;
@@ -10,19 +10,11 @@ function makeSlider(element) {
 }
 
 export default function sliderMaker() {
-  const { el } = window.True$lider;
-
-  if (!el.startsWith('.') && !el.startsWith('#'))
-    throw exception('queryClassOrId');
-
-  const sliderElement = document.querySelector(el);
-
-  if (!sliderElement) throw exception('elementNotFound');
-
+  const element = sliderElement();
   // make slider
-  makeSlider(sliderElement);
-  // add navigations
-  navigation(sliderElement);
+  makeSlider(element);
   // add slides
-  slides(sliderElement);
+  slides(element);
+  // add navigations
+  navigation(element);
 }

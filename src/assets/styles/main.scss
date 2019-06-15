@@ -30,4 +30,13 @@
   .ts-left-nav {
     left: 10px;
   }
+
+  .ts-slide-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    transition: .6s;
+  }
 }

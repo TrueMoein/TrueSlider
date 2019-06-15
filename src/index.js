@@ -6,12 +6,14 @@ const defaultOptions = {
   el: '#true-slider',
   width: 500,
   height: 400,
-  speed: 2000
+  speed: 2000,
+  autoplay: false,
+  repeat: true
 };
 
 function trueSlider(options = defaultOptions) {
   window.True$lider = { ...defaultOptions, ...options };
-  document.dispatchEvent(ready(options));
+  document.dispatchEvent(ready());
 
   sliderMaker();
 }

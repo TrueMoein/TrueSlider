@@ -1,3 +1,8 @@
+/**
+ * Exception for using in project
+ * @param {string} type - The title of the book.
+ * @return {Error} an error to throw
+ */
 export default function exception(type) {
   const { el } = window.True$lider;
   switch (type) {
@@ -13,6 +18,8 @@ export default function exception(type) {
       );
     case 'optionsNotProvided':
       return Error('The required options not provided');
+    case 'imagesNotFound':
+      return Error('Images array in trueslider options not found!');
     default:
       return Error('Error');
   }
