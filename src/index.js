@@ -7,7 +7,7 @@ const defaultOptions = {
   width: 500,
   height: 400,
   speed: 2000,
-  autoplay: false,
+  autoplay: true,
   repeat: true
 };
 
