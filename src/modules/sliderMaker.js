@@ -1,5 +1,6 @@
 import exception from "../utils/exceptions";
 import navigation from "./navigation";
+import slides from "./slides";
 
 function makeSlider(element) {
   const { width, height } = window.True$lider;
@@ -18,6 +19,10 @@ export default function sliderMaker() {
 
   if (!sliderElement) throw exception("elementNotFound");
 
+  // make slider
   makeSlider(sliderElement);
+  // add navigations
   navigation(sliderElement);
+  // add slides
+  slides(sliderElement);
 }

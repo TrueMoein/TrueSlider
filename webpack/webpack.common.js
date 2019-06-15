@@ -30,8 +30,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "[name].[ext]",
-              outputPath: path.resolve(__dirname, "../dist/fonts/")
+              name: "[name].[ext]"
             }
           }
         ]

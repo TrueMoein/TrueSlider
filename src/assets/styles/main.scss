@@ -6,7 +6,28 @@
   position: relative;
   overflow: hidden;
 
-  .ts_nav-btn {
+  .ts-navigation-icon {
+    position: absolute;
+    top: calc(50% - 15px);
+    background: rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    padding: 7px;
+    line-height: 0;
+    transition: .3s;
+    cursor: pointer;
 
+    &:hover {
+      color: white;
+      background: rgba(0, 0, 0, 0.6);
+    }
+  }
+
+  .ts-right-nav {
+    right: 10px;
+  }
+
+  .ts-left-nav {
+    left: 10px;
   }
 }
