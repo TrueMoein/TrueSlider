@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "trueslider";
+  src: url(trueslider.eot);
+  src: url(trueslider.eot?#iefix) format("embedded-opentype"), url(trueslider.woff) format("woff"), url(trueslider.ttf) format("truetype"), url(trueslider.svg#trueslider) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[data-icon]:before {
+  font-family: "trueslider" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "trueslider" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-trueslider-pause:before {
+  content: "\65"; }
+
+.icon-trueslider-play:before {
+  content: "\66"; }
+
+.icon-trueslider-shuffle:before {
+  content: "\67"; }
+
+.icon-trueslider-stop:before {
+  content: "\68"; }
+
+.icon-trueslider-end:before {
+  content: "\69"; }
+
+.icon-trueslider-start:before {
+  content: "\6a"; }
+
+.icon-trueslider-dot:before {
+  content: "\6b"; }
+
+.icon-trueslider-right:before {
+  content: "\61"; }
+
+.icon-trueslider-left:before {
+  content: "\62"; }
+
+.TrueSlider {
+  background: gray;
+  display: flex;
+  position: relative;
+  overflow: hidden; }
+  .TrueSlider .ts-navigation-icon {
+    position: absolute;
+    top: calc(50% - 15px);
+    background: rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    padding: 7px;
+    line-height: 0;
+    transition: .3s;
+    cursor: pointer; }
+    .TrueSlider .ts-navigation-icon:hover {
+      color: white;
+      background: rgba(0, 0, 0, 0.6); }
+  .TrueSlider .ts-right-nav {
+    right: 10px; }
+  .TrueSlider .ts-left-nav {
+    left: 10px; }
+  .TrueSlider .ts-slide-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    transition: .6s; }
+
+
+/*# sourceMappingURL=trueslider.css.map*/
