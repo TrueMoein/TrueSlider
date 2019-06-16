@@ -17,7 +17,8 @@ module.exports = {
     "prettier/prettier": [
       "error",
       {
-        "singleQuote": true
+        "singleQuote": true,
+        "endOfLine":"auto"
       }
     ],
     "no-param-reassign": ["error", { "props": false }],
