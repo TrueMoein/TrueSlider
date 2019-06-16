@@ -5,6 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/trueslider/dist/trueslider.css">
     <title>True Slider</title>
 </head>
 <body style="font-family: sans-serif; text-align: center; display: flex; justify-content: center; align-items: center; flex-flow: column; height: 100%;">
@@ -12,5 +13,23 @@
     <h4>
         TrueSlider is under development... Please visit this <a href="https://github.com/TrueMoein/TrueSlider/">Github Repo</a> for more information.
     </h4>
+
+    <div id="slider"></div>
+
+    <script src="https://unpkg.com/trueslider/dist/trueslider.js"></script>
+    <script>
+        window.TrueSlider({
+            el: '#slider',
+            width: 600,
+            height: 350,
+            images: [
+                'https://picsum.photos/id/220/600/350',
+                'https://picsum.photos/id/221/600/350',
+                'https://picsum.photos/id/222/600/350',
+                'https://picsum.photos/id/223/600/350',
+                'https://picsum.photos/id/224/600/350'
+            ]
+        });
+    </script>
 </body>
 </html>
