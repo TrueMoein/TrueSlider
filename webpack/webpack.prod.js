@@ -7,7 +7,7 @@ module.exports = merge(common, {
   devtool: 'source-map',
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'css/trueslider.css'
+      filename: 'trueslider.css'
     })
   ],
   module: {

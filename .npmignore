@@ -6,3 +6,4 @@ website/
 .eslintignore
 .eslintrc.js
 .gitignore
+.idea/
