@@ -11,7 +11,16 @@ const defaultOptions = {
   repeat: true
 };
 
-function trueSlider(options = defaultOptions) {
+const betterConfig = {
+  el: '#slider',
+  width: 200,
+  height: 100,
+  speed: 1000,
+  autoplay: false,
+  repeat: false
+};
+
+function trueSlider(options = betterConfig) {
   window.True$lider = { ...defaultOptions, ...options };
   document.dispatchEvent(ready());
 
